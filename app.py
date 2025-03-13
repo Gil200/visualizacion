@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 ## 1º Add a text which explain what we are going to do
 
 ## 2º Explore and show the data
-df = pd.read_csv("C:/Users/pgila/Downloads/airbnb.csv")
+df = pd.read_csv("airbnb.csv")
 
 
 ## 3º Create a table with the name of the apartment, neighbourhood_group, neighbourhood, price and reviews_per_month
