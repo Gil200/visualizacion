@@ -5,9 +5,9 @@ import plotly.express as px
 st.title("Exercise Visualization: Airbnb Analysis")
 @st.cache_data
 def load_data():
-    df = pd.read_csv("airbnb.csv")  # Ensure this file is in the same directory as the script
+    df = pd.read_csv("airbnb.csv")  
     df = df.rename(columns={"room_type": "listing_type", "neighbourhood": "neighborhood"})
-    df.dropna(subset=["price"], inplace=True)  # Remove rows without price
+    df.dropna(subset=["price"], inplace=True)  
     return df
 
 df = load_data()
@@ -18,7 +18,7 @@ neighborhoods = st.sidebar.multiselect("Select neighborhoods", df["neighborhood"
 filtered_df = df[(df["listing_type"].isin(listing_types)) & (df["neighborhood"].isin(neighborhoods))]
 
 
-tab1, tab2 = st.tabs(["Analysis", "Simulator"])
+tab1, tab2 = st.tabs(["Analysis Airbnb", "Especifications"])
 with tab1:
     col1, col2 = st.columns(2)
     with col1:
