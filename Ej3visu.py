@@ -13,8 +13,8 @@ def load_data():
 df = load_data()
 
 st.sidebar.header("Filters")
-listing_types = st.sidebar.multiselect("Select listing types", df["listing_type"].unique(), default=df["listing_type"].unique())
-neighborhoods = st.sidebar.multiselect("Select neighborhoods", df["neighborhood"].unique(), default=df["neighborhood"].unique())
+listing_types = st.sidebar.multiselect("Listing types", df["listing_type"].unique(), default=df["listing_type"].unique())
+neighborhoods = st.sidebar.multiselect("Neighborhoods", df["neighborhood"].unique(), default=df["neighborhood"].unique())
 filtered_df = df[(df["listing_type"].isin(listing_types)) & (df["neighborhood"].isin(neighborhoods))]
 
 
