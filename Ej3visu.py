@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-st.title("Pablo Gil-Antuñano")
+st.title("Exercise Visualization: Airbnb Analysis")
 
 @st.cache_data
 def load_data(uploaded_file):
