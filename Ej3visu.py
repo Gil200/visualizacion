@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar datos
-st.title("Nombre del Estudiante")
+st.title("Pablo Gil-Antuñano")
 
 @st.cache_data
 def load_data():
