@@ -7,7 +7,7 @@ st.title("Pablo Gil-Antuñano")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/mnt/data/airbnb.csv")
+    df = pd.read_csv("airbnb.csv")
     df = df.rename(columns={"room_type": "listing_type", "neighbourhood": "neighborhood"})
     df.dropna(subset=["price"], inplace=True)  # Eliminar filas sin precio
     return df
