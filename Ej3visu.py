@@ -47,8 +47,8 @@ if df is not None:
         fig3 = px.bar(top_reviews, x="neighborhood", y="reviews_per_month", color="listing_type", title="Most reviewed apartments per month by neighborhood")
         st.plotly_chart(fig3)
         
-        # Chart 4: Relationship between reviews and price
-        fig4 = px.scatter(filtered_df, x="number_of_reviews_ltm", y="price", color="listing_type", title="Reviews vs Price")
+        # Chart 4: Boxplot of reviews per month by listing type
+        fig4 = px.box(filtered_df, x="listing_type", y="reviews_per_month", title="Reviews per Month by Listing Type")
         st.plotly_chart(fig4)
         
         # Chart 5: Availability vs Price
