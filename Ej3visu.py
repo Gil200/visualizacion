@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.title("Pablo Gil-Antuñano")
+st.title("Pablo Gil-Antuñano (202307174): Airbnb Analysis")
 
 @st.cache_data
 def load_data():
