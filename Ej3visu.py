@@ -4,7 +4,6 @@ import plotly.express as px
 
 st.title("Pablo Gil-Antuñano (202307174): Airbnb Analysis")
 
-@st.cache_data
 def load_data():
     df = pd.read_csv("airbnb.csv")  # Ensure this file is in the same directory as the script
     df = df.rename(columns={"room_type": "listing_type", "neighbourhood": "neighborhood"})
